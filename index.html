@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Favicon -->
+  <link rel="sshortcut icon" href="img/favicon.svg">
+
+  <meta name="authors" content="Aybi YAñez" />
+  <meta name="copyright" content="Ref. to author | todos los derechos reservados" />
+  <meta name="keywords" content="Fondos, fotos, fondos fotográficos, foto productos, fondos rígidos, fondos flexibles">
+  <meta name="description"
+    content="Proyecto Integrador: Tienda E-commerce de fondos fotográficos para fotos productos" />
+
+  <!-- links externos -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/normalize.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Animate CSS -->
+  <!-- <link rel="stylesheet" href="css/animate.css"> -->
+  
+  <!-- links internos -->
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>AY Fondos</title>
+</head>
+<!-- fin head -->
+<body>
+  <header>
+    <!-- comienzo nav -->
+    <nav class="navBar">
+      <a href="index.html"><img class="logo" src="./img/logo-AYfondos.svg" alt="Logo AY fondos"></a>
+      <a href="javascript:void(0);" onclick = 'openMenu()' id="menu"><i class="fa fa-bars"></i></a>
+      <ul id="links">
+        <li>
+          <a class="active" href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="./pages/alta.html">Alta</a>
+        </li>
+        <li>
+          <a href="./pages/contacto.html">Contacto</a>
+        </li>
+        <li>
+          <a href="./pages/nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </nav>
+    <!-- fin nav -->
+    <h1>Fondos Fotográficos</h1>
+  </header>
+  <!-- comienza contenedor del contenido principal -->
+  <div class="main-container">
+    <!-- comienza aside -->
+    <aside>
+      <section class="search" id="search">
+        <article action="" class="search_form">
+          <input type="text" id="searchBar" placeholder="Buscar Fondos">
+          <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </article>
+      </section>
+        <section class="bg_Selection">
+          <ul class="bg_type">
+            <li>Categorías</li>
+            <li>
+              <input type="checkbox" id="rigid-bg" class="bg-category" value="rigid-bg">
+              <label for="rigid-bg">Fondos Rígidos</label>
+            </li>
+            <li>
+              <input type="checkbox" id="flexible-bg" class="bg-category" value="flexible-bg">
+              <label for="flexible-bg">Fondos Flexibles</label>
+            </li>
+            <li>
+              <input type="checkbox" id="bg-support" class="bg-category" value="bg-support">
+              <label for="bg-support">Soportes para Fondos</label>
+            </li>
+          </ul>
+          <ul class="bg_type">
+            <li>Tamaños de Fondos</li>
+            <li>
+              <input type="checkbox" id="45x45-bg" class="bg-size" value="45x45-bg">
+              <label for="45x45-bg">45x45cm</label>
+            </li>
+            <li>
+              <input type="checkbox" id="60x60-bg" class="bg-size" value="60x60-bg">
+              <label for="60x60-bg">60x60cm</label>
+            </li>
+            <li>
+              <input type="checkbox" id="90x90-bg" class="bg-size" value="90x90-bg">
+              <label for="90x90-bg">90x90cm</label>
+            </li>
+            <li>
+              <input type="checkbox" id="130x130-bg" class="bg-size" value="130x130-bg">
+              <label for="130x130-bg">130x130cm</label>
+            </li>
+            <li>
+              <input type="checkbox" id="40x120-bg" class="bg-size" value="40x120-bg">
+              <label for="40x120-bg">40x120cm</label>
+            </li>
+            <li>
+              <input type="checkbox" id="60x120-bg" class="bg-size" value="60x120-bg">
+              <label for="60x120-bg">60x120cm</label>
+            </li><li>
+              <input type="checkbox" id="90x120-bg" class="bg-size" value="90x120-bg">
+              <label for="90x120-bg">90x120cm</label>
+            </li>
+          </ul >
+        </section>
+    </aside>
+    <!-- fin aside -->
+    <!-- comienza main -->
+    <main>
+      <!-- card container Fondos Rígidos-->
+      <h2>Fondos Rígidos</h2>
+      <section class="cards-container">
+        <!-- card 1 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-1.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">45x45cm</p>
+          <h3>Fondo Rígido</h3>
+          <p>Impreso a un solo lado</p>
+          <p class="price">$3.200<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 2 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-2.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">45x45cm</p>
+          <h3>Fondo Rígido</h3>
+          <p>Impreso a ambos lados</p>
+          <p class="price">$4.500<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 3 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-3.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">45x45cm</p>
+          <h3>Set 2 Fondos Rígidos</h3>
+          <p>Impresos a un solo lado</p>
+          <p class="price">$6.000<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 4 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-4.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">45x45cm</p>
+          <h3>Set 2 Fondos Rígidos</h3>
+          <p>Impreso a ambos lados</p>
+          <p class="price">$8.500<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 5 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-5.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">60x60cm</p>
+          <h3>Fondo Rígido</h3>
+          <p>Impreso a un solo lado</p>
+          <p class="price">$4.200<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 6 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-6.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">60x60cm</p>
+          <h3>Fondo Rígido</h3>
+          <p>Impreso a ambos lados</p>
+          <p class="price">$6.300<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 7 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-7.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">60x60cm</p>
+          <h3>Set 2 Fondos Rígidos</h3>
+          <p>Impreso a un solo lado</p>
+          <p class="price">$8.000<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 8 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-8.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">60x60cm</p>
+          <h3>Set 2 Fondos Rígidos</h3>
+          <p>Impreso a ambos lados</p>
+          <p class="price">$12.000<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+      </section>
+      <!-- fin card container Fondos Rígidos -->
+      <!-- card container Fondos Flexibles-->
+      <h2>Fondos Flexibles</h2>
+      <section class="cards-container">
+        <!-- card 1 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-9.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">45x45cm</p>
+          <h3>Fondo Flexibles</h3>
+          <p>Impreso a un solo lado</p>
+          <p class="price">$2.300<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 2 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-10.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">90x90cm</p>
+          <h3>Fondo Flexibles</h3>
+          <p>Impreso a un solo lado</p>
+          <p class="price">$5.300<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 3 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-11.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">130x130cm</p>
+          <h3>Fondo Flexibles</h3>
+          <p>Impresos a un solo lado</p>
+          <p class="price">$10.600<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 4 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-12.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">40x120cm</p>
+          <h3>Fondo Flexibles</h3>
+          <p>Impreso a un solo lado</p>
+          <p class="price">$3.800<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 5 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-13.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">60x120cm</p>
+          <h3>Fondo Flexibles</h3>
+          <p>Impreso a un solo lado</p>
+          <p class="price">$5.200<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+        <!-- card 6 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/fondo-14.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">90x120cm</p>
+          <h3>Fondo Flexibles</h3>
+          <p>Impreso a un solo lado</p>
+          <p class="price">$7.300<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+      </section>
+      <!-- fin card container Fondos Flexibles -->
+      <!-- card container Soportes-->
+      <h2>Soportes</h2>
+      <section class="cards-container">
+        <!-- card 1 -->
+        <article class="product-card">
+          <picture class="images-card">
+            <img src="./img/productos/soporte.jpg" alt="Foto de fondo para Fotografía flexible">
+          </picture>
+          <p class="size">2 unidades</p>
+          <h3>Soportes</h3>
+          <p>Para set de fondos rígidos</p>
+          <p class="price">$2.300<p>
+          <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
+        </article>
+      </section>
+      <!-- fin card container soportes -->
+    </div>
+    <!-- fin contenedor del contenido principal -->
+  </main>
+  <!-- fin main -->
+  <!-- inicia footer -->
+  <footer>
+    <section class="socialMedia element">
+      <article>
+        <!-- Wpp -->                       
+        <a href="https://api.whatsapp.com/send/?phone=5493874651532" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Gmail -->
+            <a href="href=mailto:ay.fondos@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+      </article>
+      <article>
+        <!-- Insta -->                       
+        <a href="https://www.instagram.com/ay.fondos/" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <!-- FB -->
+        <a href="https://www.facebook.com/profile.php?id=100065076488455&mibextid=b06tZ0" target="_blank"> 
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </article>
+    </section>
+    <a href="index.html"><img class="logo element" src="./img/logo-AYfondosBlanco.svg" alt="Logo AY fondos"></a>
+    <ul class="linksFooter element">
+      <li>
+        <a href="./pages/alta.html">Alta</a>
+      </li>
+      <li>
+        <a href="./pages/contacto.html">Contacto</a>
+      </li>
+      <li>
+        <a href="./pages/nosotros.html">Sobre Nosotros</a>
+      </li>
+    </ul>
+  </footer>
+  <!-- fin footer -->
+  <!-- Menúes
+  <script src="js/menu/alta.js"></script>
+  <script src="js/menu/nosotros.js"></script>
+  <script src="js/menu/contacto.js"></script>
+  <script src="js/menu/inicio.js"></script>
+  <script src="js/menu/carrito.js"></script> -->
+
+  <script src="./js/main.js"></script>
+  <script src="https://kit.fontawesome.com/80d1977cd2.js" crossorigin="anonymous"></script>
+</body>
+<!-- fin body -->
+</html>
