@@ -96,12 +96,14 @@ header .navBar ul .active {
     width: 100%;
     flex-direction: column;
     background-color: rgb(242, 242, 242);
-    margin-bottom: auto;
+    margin-bottom: 0;
   }
   header .navBar #links li {
     margin: 10px;
   }
   header .navBar .fa-cart-shopping {
+    display: none;
+    margin-bottom: 0;
     font-size: 1.8rem;
     color: rgb(113, 196, 221);
   }

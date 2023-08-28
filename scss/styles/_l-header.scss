@@ -82,17 +82,19 @@ header{
             }
             
             #links{
-                display:none;
+                display: none;
                 width: 100%;
                 flex-direction: column;
                 background-color: rgb(242, 242, 242);
-                margin-bottom: auto;
+                margin-bottom: 0;
                 li{
                     margin: 10px;
                 }
             }  
             
             .fa-cart-shopping{
+                display: none;
+                margin-bottom: 0;
                 font-size: 1.8rem;
                 color: C.$mediumCyanColor;
             }
