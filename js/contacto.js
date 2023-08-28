@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 isValid = false; // Marcar como no válido
             }
         }
-         if (e.target[4].name === 'message') {
-            let message = e.target[4].value;
+         if (e.target[5].name === 'message') {
+            let message = e.target[5].value;
             if (message.match(msgRegex)) {
                 msgError.innerHTML = "";
             } else {
@@ -68,6 +68,9 @@ document.addEventListener('DOMContentLoaded', function () {
         
         if (!isValid) {
             e.preventDefault(); // Evitar el envío del formulario si no es válido
+        } else {
+            // Si el formulario es válido, muestra el mensaje de éxito
+            document.getElementById('form__message-ok').textContent = "¡Tu consulta fue enviada!";
         }
     });
 
