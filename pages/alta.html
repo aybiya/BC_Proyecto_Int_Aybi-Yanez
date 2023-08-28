@@ -60,62 +60,55 @@
     <form action="" id="form-product" class="form-product" autocomplete="off">
         <!-- Nombre -->
         <article class="form-product__group">
-          <label for="productName" class="form__label-product">Nombre</label>
-          <input type="text" class="form__input" id="productName" />
-          <div></div>
+          <label for="name" class="form__label-product">Nombre</label>
+          <input type="text" class="form__input" name="name" id="name" />
         </article>
         <!-- Tipo -->
         <article class="form-product__group">
-          <label for="productType" class="form__label-product">Tipo</label>
-          <input type="text" class="form__input" id="productType" />
-          <div></div>
+          <label for="type" class="form__label-product">Tipo</label>
+          <input type="text" class="form__input" name="type" id="type" />
         </article>
         <!--Precio -->
         <article class="form-product__group">
-          <label for="productPrice" class="form__label-product">Tipo</label>
-          <input type="text" class="form__input" id="productPrice" />
-          <div></div>
-        </article>
-        <!-- stock -->
-        <article class="form-product__group">
-          <label for="stock" class="form__label-product">Stock</label>
-          <input type="text" class="form__input" id="stock" />
-          <div></div>
+          <label for="price" class="form__label-product">Precio</label>
+          <input type="text" name="price" class="form__input" id="price" />
         </article>
         <!-- Stock -->
         <article class="form-product__group">
           <label for="stock" class="form__label-product">Stock</label>
-          <input type="text" class="form__input" id="stock" />
-          <div></div>
+          <input type="text" name="stock" class="form__input" id="stock" />
         </article>
         <!-- Foto -->
         <article class="form-product__group">
-          <label for="foto" class="form__label-product">Foto</label>
-          <input type="text" class="form__input" id="foto" />
-          <div></div>
+          <label for="photo" class="form__label-product">Foto</label>
+          <input type="text" name="photo" class="form__input" id="photo" />
         </article>
         <!-- Caategoria-->
         <article class="form-product__category">
           <label for="category" class="form__label-product">Categoría:</label>
           <div>
             <label class="radio" for="rigid">
-              <input type="radio" id="rigid" name="category" value="rígido">
+              <input type="radio" id="rigid" name="rigid" value="rígido">
               Rígido
             </label>
             <label class="radio" for="flexible">
-              <input type="radio" id="flexible" name="category" value="flexible">
+              <input type="radio" id="flexible" name="flexible" value="flexible">
               Flexible
             </label>
           </div>
         </article>
         <!-- Envios --> 
         <article class="form-product__group">
-          <label for="envio" class="form__label-product" id="label-envio">
-            <input type="checkbox" id="envio"/>
+          <label for="shipping" class="form__label-product" id="label-envio">
+            <input type="checkbox" name="shipping" id="shipping"/>
             Envíos
           </label>
         </article>
       </form>
+      <section>
+        <p id="error-message"></p>
+        <p id="submit-message"></p>
+      </section>
       <section class="form-product__btn">
         <button>Agregar</button>
       </section>
