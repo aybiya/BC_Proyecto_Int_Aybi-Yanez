@@ -12,7 +12,7 @@ html h1 {
   color: rgb(102, 177, 200);
   text-align: center;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   html h1 {
     font-size: 1.8rem;
     font-weight: 800;
@@ -75,7 +75,7 @@ header .navBar ul .active {
   color: rgb(103, 121, 127);
   font-weight: 600;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   header .navBar {
     flex-wrap: wrap;
   }
@@ -171,7 +171,7 @@ footer .linksFooter a:hover {
     width: 35%;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   footer {
     padding: 0.5rem 1rem;
     justify-content: space-around;
@@ -191,7 +191,7 @@ footer .linksFooter a:hover {
   footer .linksFooter {
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     margin: 0;
   }
   footer .linksFooter a {
@@ -331,7 +331,7 @@ footer .linksFooter a:hover {
 .main-container main .cards-container .product-card button i {
   padding-right: 1.5rem;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .main-container {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -723,7 +723,7 @@ footer .linksFooter a:hover {
     order: 1;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .cards-us-container .us-card, .cards-us-container .us-card:nth-child(2) {
     width: 90%;
   }
