@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Favicon -->
+  <link rel="sshortcut icon" href="../img/favicon.svg">
+
+  <meta name="authors" content="Aybi YAñez" />
+  <meta name="copyright" content="Ref. to author | todos los derechos reservados" />
+  <meta name="keywords" content="Fondos, fotos, fondos fotográficos, foto productos, fondos rígidos, fondos flexibles">
+  <meta name="description"
+    content="Proyecto Integrador: Tienda E-commerce de fondos fotográficos para fotos productos" />
+
+  <!-- links externos -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/normalize.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Animate CSS -->
+  <!-- <link rel="stylesheet" href="css/animate.css"> -->
+  
+  <!-- links internos -->
+  <link rel="stylesheet" href="../css/styles.css">
+  
+  <title>AY Fondos</title>
+</head>
+<!-- fin head -->
+<body>
+  <header>
+    <!-- comienzo nav -->
+    <nav class="navBar">
+      <a href="../index.html"><img class="logo" src="../img/logo-AYfondos.svg" alt="Logo AY fondos"></a>
+      <a href="javascript:void(0);" onclick = 'openMenu()' id="menu"><i class="fa fa-bars"></i></a>
+      <ul id="links">
+        <li>
+          <a class="active" href="./contacto.html">Contacto</a>
+        </li>
+        <li>
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="./alta.html">Alta</a>
+        </li>
+        <li>
+          <a href="./nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </nav>
+    <!-- fin nav -->
+    <h1>Contactanos!</h1>
+  </header>
+  <aside>
+      
+  </aside>
+  <!-- comienza main -->
+  <main class="main-contact">
+    <h2>Consulta</h2>
+    <form action="" id="form-contact" class="form-contact" autocomplete="off">
+      <section class="form-contact__info">
+        <div>
+          <section class="form__group" id="name_group">
+            <label for="name" class="form__label">Nombre</label>
+            <article class="form__group-input">
+              <input type="text" class="form__input" name="nombre" id="name" placeholder="María">
+            </article>
+            <p class="form__input-error"><i class="fas fa-exclamation-triangle"></i>El nombre no está escrito correctamente.</p>
+          </section>
+          <section class="form__group" id="name_group">
+            <label for="lastName" class="form__label">Apellido</label>
+            <article class="form__group-input">
+              <input type="text" name="apellido" id="lastName" class="form__input" placeholder="Lopez">
+            </article>
+            <p class="form__input-error"><i class="fas fa-exclamation-triangle"></i>El apellido no está escrito correctamente.</p>
+          </section>
+        </div>
+        <div>
+          <section class="form__group" id="email_group">
+            <label for="email" class="form__label">Dirección de correo electrónico</label>
+            <article class="form__group-input">
+              <input type="email" name="email" id="email" class="form__input" placeholder="marialopez@mail.com">
+            </article>
+            <p class="form__input-error"><i class="fas fa-exclamation-triangle"></i>El e-mail no está escrito correctamente.</p>
+          </section>
+          <section class="form__group" id="tel_group">
+            <label for="elefono" class="form__label">Celular</label>
+            <article class="form__group-input">
+              <input type="tel" name="telefono" id="elefono" class="form__input" placeholder="3875822304">
+            </article>
+            <p class="form__input-error"><i class="fas fa-exclamation-triangle"></i>El número no está escrito correctamente.</p>
+          </section>
+        </div>
+      </section>
+      <section class="form-contact__reason">
+        <h3>Motivo de tu consulta</h3>
+        <article>
+          <label for="reason" id="reason-label">Seleccionar un motivo:</label>
+          <select name="reason" id="reason">
+              <option value="personalizados">Fondos personalizados</option>
+              <option value="estado-envio">Estado de envio de mi producto</option>
+              <option value="cancelar-pedido">Cancelación de mi pedido</option>
+              <option value="mayorista">Fondos por mayorista</option>
+              <option value="otro">Otras consultas</option>
+          </select>
+        </article>
+      </section>
+      <section class="form-contact__message">
+        <h3>Escribí tu mensaje</h3>
+        <textarea name="message" id="message" placeholder="Escribir acá tu mensaje..."></textarea>
+        <p class="form__message-error" id="form__message"><i class="fas fa-exclamation-triangle"></i>Por favor completar el formulario.</p>
+    </section>
+    <section class="form-contact__btn">
+        <button type="submit" class="form__btn">Enviar</button>
+        <p class="form__message-send" id="form__message-ok">¡Tu consulta fue enviada!</p>
+    </section>
+    </form>
+    <!-- fin form -->
+  </main>
+  <!-- fin main -->
+  <!-- inicia footer -->
+  <footer>
+    <section class="socialMedia element">
+      <article>
+        <!-- Wpp -->                       
+        <a href="https://api.whatsapp.com/send/?phone=5493874651532" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Gmail -->
+            <a href="href=mailto:ay.fondos@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+      </article>
+      <article>
+        <!-- Insta -->                       
+        <a href="https://www.instagram.com/ay.fondos/" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <!-- FB -->
+        <a href="https://www.facebook.com/profile.php?id=100065076488455&mibextid=b06tZ0" target="_blank"> 
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </article>
+    </section>
+    <a href="../index.html"><img class="logo element" src="../img/logo-AYfondosBlanco.svg" alt="Logo AY fondos"></a>
+    <ul class="linksFooter element">
+      <li>
+        <a href="../index.html">Inicio</a>
+      </li>
+      <li>
+        <a href="./alta.html">Alta</a>
+      </li>
+      <li>
+        <a href="./nosotros.html">Sobre Nosotros</a>
+      </li>
+    </ul>
+  </footer>
+  <!-- fin footer -->
+  <!-- Menúes
+  <script src="js/menu/alta.js"></script>
+  <script src="js/menu/nosotros.js"></script>
+  <script src="js/menu/contacto.js"></script>
+  <script src="js/menu/inicio.js"></script>
+  <script src="js/menu/carrito.js"></script> -->
+
+  <script src="./js/main.js"></script>
+  <script src="https://kit.fontawesome.com/80d1977cd2.js" crossorigin="anonymous"></script>
+</body>
+<!-- fin body -->
+</html>
