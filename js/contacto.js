@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (message.match(msgRegex)) {
                 msgError.innerHTML = "";
             } else {
-                msgError.innerHTML = "<p>Completar el campo con un mínimo de 10 y máximo de 200 caracteres</p>";
+                msgError.innerHTML = "<p>Completar el campo con un mínimo de 10 y máximo de 100 caracteres</p>";
                 isValid = false; // Marcar como no válido
             }
         }
