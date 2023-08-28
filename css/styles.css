@@ -34,7 +34,7 @@ header h1 {
 }
 header .navBar {
   background-color: rgb(214, 221, 228);
-  box-shadow: 2px 2px 20px 0.5px rgba(0, 0, 0, 0.296);
+  box-shadow: 2px 2px 20px 0.8px rgb(173, 175, 177);
   display: flex;
   align-items: center;
   position: fixed;
@@ -312,7 +312,7 @@ footer .linksFooter a:hover {
 .main-container main .cards-container .product-card h3 {
   color: rgb(102, 177, 200);
   font-size: 1.8rem;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 .main-container main .cards-container .product-card .price {
   color: rgb(103, 121, 127);
@@ -392,11 +392,12 @@ footer .linksFooter a:hover {
   }
   .main-container main .cards-container .product-card h3 {
     font-size: 1.8rem;
+    line-height: 1.8;
   }
   .main-container main .cards-container .product-card p {
     font-size: 1.3rem;
   }
-  .main-container main .cards-container .product-card h3, .main-container main .cards-container .product-card p, .main-container main .cards-container .product-card button {
+  .main-container main .cards-container .product-card p, .main-container main .cards-container .product-card button {
     line-height: 1.3;
   }
 }
