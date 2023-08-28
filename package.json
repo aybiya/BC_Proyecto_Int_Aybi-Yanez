@@ -1,0 +1,13 @@
+{
+  "name": "proyecto_int_01",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass",
+    "watch": "sass --watch scss/styles.sass:css/styles.css --no-source-map --no-indented"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
