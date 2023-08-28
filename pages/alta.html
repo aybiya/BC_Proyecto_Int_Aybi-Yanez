@@ -52,12 +52,13 @@
       <i class="fa-solid fa-cart-shopping"></i>
     </nav>
     <!-- fin nav -->
-    <h1>Producto</h1>
+    <h1>Alta de Producto</h1>
   </header>
   <!-- comienza main -->
   <main class="main-product-registration">
-    <h2>Consulta</h2>
-    <form action="" id="form-product" class="form-product" autocomplete="off">
+    <h2>Datos</h2>
+    <form action="" id="form-product" autocomplete="off">
+      <section class="form-product" >
         <!-- Nombre -->
         <article class="form-product__group">
           <label for="name" class="form__label-product">Nombre</label>
@@ -97,6 +98,7 @@
             </label>
           </div>
         </article>
+        <input type="hidden" name="categorySelected" id="categorySelected" />
         <!-- Envios --> 
         <article class="form-product__group">
           <label for="shipping" class="form__label-product" id="label-envio">
@@ -104,15 +106,16 @@
             Envíos
           </label>
         </article>
-      </form>
+      </section>
       <section>
-        <p id="error-message"></p>
-        <p id="submit-message"></p>
+        <ul id="error-message"></ul>
+        <ul id="submit-message"></ul>
       </section>
       <section class="form-product__btn">
         <button>Agregar</button>
       </section>
-    </main>
+    </form>
+  </main>
   <!-- fin main -->
   <!-- inicia footer -->
   <footer>

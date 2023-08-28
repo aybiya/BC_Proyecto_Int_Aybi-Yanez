@@ -2,10 +2,10 @@ let productForm = document.getElementById('form-product');
 let inputsProduct = document.querySelectorAll('#form-product input');
 let errorMessage = document.getElementById("error-message");
 
-const nameRegex = /^[A-ZÁÉÍÓÚÑ]?[a-záéíóúñ]{6,10}$/gm;
-const stockRegex = /^\d{2,3}x\d{2,3}cm$/gm;
+const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]{6,}$/gm;
+const stockRegex = /^\d{1,3}(?:\.\d{3})*$/gm;
 const typeRegex = /^\d{2,3}x\d{2,3}cm$/gm;
-const priceRegex = /^\d+(\.\d{2})?$/gm;
+const priceRegex = /^\$?\d{1,3}(?:\.\d{3})*$/gm;
 const photoRegex = /^.+\.jpg$/gm;
 
 
@@ -13,13 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
     productForm.addEventListener("submit", (e) => {
 
         let isValid = true;
+        let errorMessages = []; // Aquí almacenamos los mensajes de error
+
 
         if (e.target[0].name === 'name') {
             let nombre = e.target[0].value;
             if (nombre.match(nameRegex)) {
                 errorMessage.innerHTML = "";
             } else {
-                errorMessage.innerHTML = "<p>El nombre no está escrito correctamente.</p>";
+                errorMessages.push("El nombre no está escrito correctamente.");
                 isValid = false; // Marcar como no válido
             }
         } 
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (type.match(typeRegex)) {
                 errorMessage.innerHTML = "";
             } else {
-                errorMessage.innerHTML = "<p>El tipo no está escrito correctamente, ej: '45x45cm'.</p>";
+                errorMessages.push("El tipo no está escrito correctamente, ej: '45x45cm'.");
                 isValid = false; // Marcar como no válido
             }
         }
@@ -38,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (price.match(priceRegex)) {
                 errorMessage.innerHTML = "";
             } else {
-                errorMessage.innerHTML = "<p>El precio no está escrito correctamente.</p>";
+                errorMessages.push("El precio no está escrito correctamente, ej '$2.000'.");
                 isValid = false; // Marcar como no válido
             }
         }
@@ -47,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (stock.match(stockRegex)) {
                 errorMessage.innerHTML = "";
             } else {
-                errorMessage.innerHTML = "<p>El número no está escrito correctamente.</p>";
+                errorMessages.push("El stock no es válido.");
                 isValid = false; // Marcar como no válido
             }
         }
@@ -56,11 +58,27 @@ document.addEventListener('DOMContentLoaded', function () {
             if (photo.match(photoRegex)) {
                 errorMessage.innerHTML = "";
             } else {
-                errorMessage.innerHTML = "<p>Solo admite archivo en formato '.jpg'.</p>";
+                errorMessages.push("Solo admite archivo en formato'.jpg'");
                 isValid = false; // Marcar como no válido
             }
         }
         
+        
+        // Validación de la categoría
+        const rigidRadio = e.target['rigid'];
+        const flexibleRadio = e.target['flexible'];
+
+        if (!rigidRadio.checked && !flexibleRadio.checked) {
+            errorMessages.push("Debes seleccionar una categoría.");
+            isValid = false; // Marcar como no válido
+        } else {
+            errorMessages.push(""); // Agrega una cadena vacía al array de mensajes de error
+        }
+ 
+
+        // Mostrar todos los mensajes acumulados en errorMessage
+        errorMessage.innerHTML = errorMessages.map(message => `<li>${message}</li>`).join('');
+
         if (!isValid) {
             e.preventDefault(); // Evitar el envío del formulario si no es válido
         } else {
