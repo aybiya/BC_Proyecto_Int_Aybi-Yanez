@@ -109,19 +109,17 @@
                 padding: 0.8rem;
 
                 &-error{
-                    color: rgb(175, 2, 2);
-                    i{
-                        padding-right: 1rem;
+                    &-name, &-lastName, &-email, &-phone{
+                        color: rgb(175, 2, 2);
+                        font-size: 0.8rem;
                     }
                 }
             }
         }
 
-        .form__message-error{
+        .form__input-error-message{
             color: rgb(175, 2, 2);
-            i{
-                padding-right: 1rem;
-            }
+                        font-size: 0.8rem;
         }
 
         //Footer BP mobile & tablet

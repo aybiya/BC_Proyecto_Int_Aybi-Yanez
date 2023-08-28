@@ -602,17 +602,13 @@ footer .linksFooter a:hover {
   border: none;
   padding: 0.8rem;
 }
-.main-contact .form-contact .form__group .form__input-error {
+.main-contact .form-contact .form__group .form__input-error-name, .main-contact .form-contact .form__group .form__input-error-lastName, .main-contact .form-contact .form__group .form__input-error-email, .main-contact .form-contact .form__group .form__input-error-phone {
   color: rgb(175, 2, 2);
+  font-size: 0.8rem;
 }
-.main-contact .form-contact .form__group .form__input-error i {
-  padding-right: 1rem;
-}
-.main-contact .form-contact .form__message-error {
+.main-contact .form-contact .form__input-error-message {
   color: rgb(175, 2, 2);
-}
-.main-contact .form-contact .form__message-error i {
-  padding-right: 1rem;
+  font-size: 0.8rem;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .main-contact .form-contact__info, .main-contact .form-contact__reason, .main-contact .form-contact__message {
