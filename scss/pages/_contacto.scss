@@ -1,0 +1,143 @@
+/* // Contacto */
+
+@use '../styles/h-fonts.scss' as F;
+@use '../styles/h-colors.scss' as C;
+@use '../styles/mixin.scss' as M;
+
+.main-contact{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    h2{
+        font-family: F.$titlesFont;
+        font-size: F.$textLg;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-top: 0;
+        padding: 1rem;
+        color: #f6f4f4;
+        background-color: C.$primaryColor;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 100%;
+
+    }
+
+    .form-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5rem;
+        
+        &__info{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+        }
+        &__reason{
+            margin-top: 1rem;
+            padding: 0 4rem;
+            width: 100%;
+            font-size: 0.7rem;
+            #reason{
+                margin: 0 1.5rem;
+                color: C.$primaryColor;
+                background-color: white;
+                border-radius: 10px;
+                border: none;
+                padding: 0.4rem;
+            }
+        }
+
+        &__message {
+            margin-top: 1rem;
+            padding: 0 4rem;
+            width: 100%;
+            font-size: 0.7rem;
+            textarea{ 
+                width: 100%;;
+                height: 10vh;
+                color: C.$primaryColor;
+                background-color: white;
+                border-radius: 10px;
+                border: none;
+                padding: 1rem;
+            } 
+        }
+
+        &__btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem 0 2rem 0;
+
+            .form__btn{
+                font-size: F.$textMd;
+                color: white;
+                background-color: C.$primaryColor;
+                border: none;
+                border-radius: 5px;
+                padding: 0.5rem 1.5rem;
+            }
+            .form__message-send{
+                color: C.$primaryColor;
+                font-size: F.$textMd;
+            }
+        }
+
+        .form__group{
+            margin-top: 2rem;
+            .form__label {
+                font-size: F.$textSm;
+                font-weight: F.$textSemiBold;
+            }
+
+            .form__input{
+                font-size: F.$textSm;
+                margin: 0.5rem 0;
+                font-weight: F.$textLight;
+                color: C.$primaryColor;
+                background-color: white;
+                border-radius: 10px;
+                border: none;
+                padding: 0.8rem;
+
+                &-error{
+                    color: rgb(175, 2, 2);
+                    i{
+                        padding-right: 1rem;
+                    }
+                }
+            }
+        }
+
+        .form__message-error{
+            color: rgb(175, 2, 2);
+            i{
+                padding-right: 1rem;
+            }
+        }
+
+        //Footer BP mobile & tablet
+        @media (min-width: 320px) and (max-width: 1023px){
+            &__info, &__reason, &__message{
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: start;
+                align-items: center;
+                padding: 0 5rem;
+            }
+
+            #reason{
+                margin: 1rem 0 0 0;
+            }
+        }
+
+    }
+}

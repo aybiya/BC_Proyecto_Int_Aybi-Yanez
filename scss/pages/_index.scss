@@ -1,0 +1,206 @@
+/* // Index */
+
+@use '../styles/h-fonts.scss' as F;
+@use '../styles/h-colors.scss' as C;
+@use '../styles/mixin.scss' as M;
+
+.main-container{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Dos columnas, la primera tiene el doble de ancho que la segunda */
+    gap: 20px;
+
+    aside{
+        .search{
+            background-color: none;
+            padding-left: 2rem;
+            width: 100%;
+            input{
+                background-color: none;
+                border: white;
+                border-bottom: 2px solid C.$primaryColor;
+                color: C.$GrayColor;
+
+            }
+
+            #searchButton{
+                background-color: white;
+                border: none;
+                i{
+                    color: C.$primaryColor;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+            .bg_type{
+                margin-top: 1.5rem;
+                li{
+                    font-size: F.$textSm;
+                    font-weight: F.$textBold;
+                    padding-top: 0.5rem;
+                    label{
+                        font-weight: F.$textRegular;
+                    }
+                }
+            }
+    }
+
+    main{
+
+        h2{
+            font-family: F.$titlesFont;
+            font-size: F.$textLg;
+            text-align: center;
+            letter-spacing: 2px;
+            padding: 1rem;
+            color: #f6f4f4;
+            background-color: C.$primaryColor;
+            border-radius: 15px;
+            width: 95%;
+        }
+
+        .cards-container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+            padding-right: 3rem; 
+            justify-items: center;
+            margin-bottom: 5rem;
+
+            .product-card{
+                width: 95%;
+                text-align: center;
+                background-color: white;
+                border-radius: 15px;
+                box-shadow: 2px 2px 20px 0.8px C.$lightGrayColor;
+                padding-bottom: 0.5rem;
+
+                .size{
+                    color: hsl(228, 12%, 48%);
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    padding: 0;
+                    font-size: 1rem;
+                    line-height: 0.9;
+                }
+
+                p{
+                    font-size: 1.2rem;
+                    line-height: 0.8;
+                }
+
+                h3{
+                    color: C.$primaryColor;
+                    font-size: F.$textLg;
+                    line-height: 0.6;
+                }
+
+                .price{
+                    color: C.$secondaryColor;
+                    font-size: 1.7rem;
+                    font-weight: F.$textBold;
+                }
+
+                .images-card{
+                    img{
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                    }
+                }
+                button{
+                    color: white;
+                    background-color: C.$primaryColor;
+                    padding: 0.8rem 1.2rem;
+                    border: none;
+                    border-radius: 10px;
+                    i{
+                        padding-right: 1.5rem;
+                    }
+                }
+            }
+        }
+        
+    }
+     //Footer BP mobile
+     @include M.medias(mobile){
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        aside{
+            display: none;
+        }
+        main{
+            padding: 0 1rem;
+            line-height: 1.3;
+
+            h2{
+                width: 100%;
+            }
+
+            .cards-container{
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                align-items: center;
+                gap: 1rem;
+                padding-right: 0; 
+
+                .product-card{
+                    h3{
+                        font-size: F.$textMd;
+                    }
+                    p{
+                        font-size: F.$textSm;
+                    }
+                    h3, p, button{
+                        line-height: 1.3;
+                    }
+                }
+            }
+        }
+     }
+
+     //Footer BP tablet
+     @include M.medias(tablet){
+        grid-template-columns: 1fr 2fr; /* Dos columnas, la primera tiene el doble de ancho que la segunda */
+        gap: 20px;
+    
+        aside{
+            .search{
+                background-color: none;
+                padding-left: 2rem;
+                width: 100%;
+            }
+        }
+
+        main{
+            padding: 0 1rem;
+            line-height: 1.3;
+
+            h2{
+                width: 100%;
+            }
+
+            .cards-container{
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                align-items: center;
+                gap: 1rem;
+                padding-right: 0; 
+
+                .product-card{
+                    h3{
+                        font-size: F.$textLg;
+                    }
+                    p{
+                        font-size: F.$textMd;
+                    }
+                    h3, p, button{
+                        line-height: 1.3;
+                    }
+                }
+            }
+        }
+     }
+}

@@ -1,0 +1,118 @@
+/* // Alta */
+
+@use '../styles/h-fonts.scss' as F;
+@use '../styles/h-colors.scss' as C;
+@use '../styles/mixin.scss' as M;
+
+.main-product-registration{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    h2{
+        font-family: F.$titlesFont;
+        font-size: F.$textLg;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-top: 0;
+        padding: 1rem;
+        color: #f6f4f4;
+        background-color: C.$primaryColor;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 100%;
+
+    }
+    .form-product__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: F.$textSm;
+            color: white;
+            background-color: C.$primaryColor;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+    .form-product{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: start;
+        width: 100%;
+
+        &__group{
+            padding-bottom: 2rem;
+
+            .form__label-product{
+                font-size: F.$textSm;
+                font-weight: F.$textSemiBold;
+                padding-right: 2rem;
+            }
+            .form__input{
+                font-size: F.$textSm;
+                margin: 0.5rem 0;
+                font-weight: F.$textLight;
+                color: C.$primaryColor;
+                background-color: white;
+                border-radius: 10px;
+                border: none;
+                padding: 0.8rem;
+            }
+        }
+
+        &__category{
+            display: flex;
+
+            .form__label-product{
+                font-size: F.$textSm;
+                font-weight: F.$textSemiBold;
+                padding-right: 2rem;
+            }
+
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                label{
+                    padding-right: 0.5rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+    //Footer BP mobile xl
+    @media (max-width: 869px){
+        .form-product{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 5rem;
+        }
+    }
+
+    //Footer BP tablet xl
+    @media (min-width: 870px) and (max-width: 1099px){
+        .form-product{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: start;
+            width: 100%;
+        }
+    }
+}
