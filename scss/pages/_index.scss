@@ -94,7 +94,7 @@
                 h3{
                     color: C.$primaryColor;
                     font-size: F.$textLg;
-                    line-height: 1.6;
+                    line-height: 1.8;
                 }
 
                 .price{
@@ -192,11 +192,12 @@
                 .product-card{
                     h3{
                         font-size: F.$textLg;
+                        line-height: 1.8;
                     }
                     p{
                         font-size: F.$textMd;
                     }
-                    h3, p, button{
+                    p, button{
                         line-height: 1.3;
                     }
                 }
