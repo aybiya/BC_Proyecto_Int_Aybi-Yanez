@@ -24,6 +24,19 @@
         width: 100%;
 
     }
+
+    #error-message{
+        color: rgb(175, 2, 2);
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    #submit-message{
+        color: C.$primaryColor;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
     .form-product__btn{
         display: flex;
         justify-content: center;
@@ -67,6 +80,7 @@
                 border-radius: 10px;
                 border: none;
                 padding: 0.8rem;
+
             }
         }
 
@@ -90,6 +104,7 @@
                     font-size: 1rem;
                 }
             }
+            
         }
 
     }

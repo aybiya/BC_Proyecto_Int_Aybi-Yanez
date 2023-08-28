@@ -424,6 +424,16 @@ footer .linksFooter a:hover {
   border-top-right-radius: 15px;
   width: 100%;
 }
+.main-product-registration #error-message {
+  color: rgb(175, 2, 2);
+  font-size: 0.8rem;
+  text-align: center;
+}
+.main-product-registration #submit-message {
+  color: rgb(102, 177, 200);
+  font-size: 0.8rem;
+  text-align: center;
+}
 .main-product-registration .form-product__btn {
   display: flex;
   justify-content: center;
