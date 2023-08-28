@@ -60,22 +60,22 @@
   <!-- comienza main -->
   <main class="main-contact">
     <h2>Consulta</h2>
-    <form action="" id="form-contact" class="form-contact" autocomplete="off">
+    <form action="" id="contact-form" class="form-contact" autocomplete="off">
       <section class="form-contact__info">
         <div>
           <section class="form__group" id="name_group">
             <label for="name" class="form__label">Nombre</label>
             <article class="form__group-input">
-              <input type="text" class="form__input" name="nombre" id="name" placeholder="María">
+              <input type="text" class="form__input" name="name" id="name" placeholder="María">
             </article>
-            <p class="form__input-error"><i class="fas fa-exclamation-triangle"></i>El nombre no está escrito correctamente.</p>
+            <p class="form__input-error-name"></p>
           </section>
           <section class="form__group" id="name_group">
             <label for="lastName" class="form__label">Apellido</label>
             <article class="form__group-input">
-              <input type="text" name="apellido" id="lastName" class="form__input" placeholder="Lopez">
+              <input type="text" name="lastName" id="lastName" class="form__input" placeholder="Lopez">
             </article>
-            <p class="form__input-error"><i class="fas fa-exclamation-triangle"></i>El apellido no está escrito correctamente.</p>
+            <p class="form__input-error-lastName"></i></p>
           </section>
         </div>
         <div>
@@ -84,14 +84,14 @@
             <article class="form__group-input">
               <input type="email" name="email" id="email" class="form__input" placeholder="marialopez@mail.com">
             </article>
-            <p class="form__input-error"><i class="fas fa-exclamation-triangle"></i>El e-mail no está escrito correctamente.</p>
+            <p class="form__input-error-email"></i></p>
           </section>
           <section class="form__group" id="tel_group">
-            <label for="elefono" class="form__label">Celular</label>
+            <label for="phone" class="form__label">Celular</label>
             <article class="form__group-input">
-              <input type="tel" name="telefono" id="elefono" class="form__input" placeholder="3875822304">
+              <input type="tel" name="phone" id="phone" class="form__input" placeholder="3875822304">
             </article>
-            <p class="form__input-error"><i class="fas fa-exclamation-triangle"></i>El número no está escrito correctamente.</p>
+            <p class="form__input-error-phone"></i></p>
           </section>
         </div>
       </section>
@@ -111,10 +111,10 @@
       <section class="form-contact__message">
         <h3>Escribí tu mensaje</h3>
         <textarea name="message" id="message" placeholder="Escribir acá tu mensaje..."></textarea>
-        <p class="form__message-error" id="form__message"><i class="fas fa-exclamation-triangle"></i>Por favor completar el formulario.</p>
+        <p class="form__input-error-message" id="form__message"></p>
     </section>
     <section class="form-contact__btn">
-        <button type="submit" class="form__btn">Enviar</button>
+        <button type="submit" id="submit" class="form__btn">Enviar</button>
         <p class="form__message-send" id="form__message-ok">¡Tu consulta fue enviada!</p>
     </section>
     </form>
@@ -159,14 +159,8 @@
     </ul>
   </footer>
   <!-- fin footer -->
-  <!-- Menúes
-  <script src="js/menu/alta.js"></script>
-  <script src="js/menu/nosotros.js"></script>
-  <script src="js/menu/contacto.js"></script>
-  <script src="js/menu/inicio.js"></script>
-  <script src="js/menu/carrito.js"></script> -->
-
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/contacto.js"></script>
   <script src="https://kit.fontawesome.com/80d1977cd2.js" crossorigin="anonymous"></script>
 </body>
 <!-- fin body -->
